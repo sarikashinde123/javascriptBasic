@@ -1,0 +1,38 @@
+
+/* change div background color */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .d1
+    {
+
+        background-color: rgb(219, 72, 72);
+        width: 200px;
+        height: 200px
+    }
+    .d1:hover
+    {
+        background-color: blueviolet;
+    }
+    #chosenColor {background-color: black;}
+#c1 {background-color: yellow; }
+</style>
+<body>
+    <div class="d1">
+        change me
+    </div>
+    <div id="chosenColor"></div>  
+    <div id="c1" onClick="changeColor(this.style.backgroundColor)">
+
+    </div>
+</body>
+<script src="divcolor.js">
+    
+</script>
+</html>
