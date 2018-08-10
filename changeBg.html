@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button"  value="start" onclick="fun1()">
+    <input type="button" value="stop" onclick="stop()">
+<script>
+
+ var i=0;
+ var s1;
+    function changeCol()
+    {
+
+        console.log("in change col..")
+      var arr=["red","blue","black"];
+    
+      document.bgColor=arr[i];
+      i++;
+      if(arr.length==i)
+      {
+          i=0
+      }
+    }
+
+
+
+    function fun1()
+    {
+
+        s1=setInterval("changeCol()",400);
+       
+
+    }
+
+    function stop()
+    {
+        clearInterval(s1);
+    }
+
+
+    
+</script>
+</body>
+</html>
